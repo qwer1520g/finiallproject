@@ -1,0 +1,30 @@
+<!--<h2>{{movie.date}}</h2>-->
+<div class="movieImg" style="text-align:center"  >
+    <div>
+        <img src={{hero.url}}  width="200px" hight="300px">
+        
+    </div>
+    <h2 style="color:white">上映時間</h2>
+    <div>
+      <ul class="movieDate">
+        <li *ngFor="let date of movie.date">
+            <HR>
+            <h3 class="date" style="font-size:22px;color:white">{{date}}</h3>
+            <ul class="movieTime" style="font-size:18px">
+                <li *ngFor="let time of movie.time" (click)="selectTime(date,time)">
+                    <span class="time">{{time}}</span>
+                    
+                </li>      
+            </ul> 
+        </li>     
+      </ul>
+    </div>
+      <br><span class="Back" (click)="goBack()">Back</span>
+      
+</div> 
+
+
+
+
+
+

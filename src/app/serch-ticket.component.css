@@ -1,0 +1,44 @@
+.title{
+    position:relative;
+    left:45%;
+    font-size: 30px;
+    font-weight:bold;
+}
+.careful{
+   position:relative;
+    left:45%; 
+    font-weight:bold;
+}
+.name{
+    color:yellow;
+}
+.phone{
+    color:yellow;
+}
+.serch{
+    position:relative;
+    left:45%;
+}
+.serchButton{
+    background-color: #DDD;
+    font-size: 18px;
+    color: black;
+    font-weight:bold;
+    left: .1em;
+    width: 40px;
+    border-style:solid;
+    border-color:greenyellow;
+    border-radius:6px;
+}
+.serchButton:hover{
+    background-color: #DDD;
+    font-size: 20px;
+    color: red;
+    font-weight:bold;
+    left: .1em;
+    width: 42px;
+    border-style:solid;
+    border-color:greenyellow;
+    border-radius:6px;
+    cursor: pointer; cursor: hand;
+}

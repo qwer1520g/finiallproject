@@ -1,0 +1,21 @@
+<h2 style="color:white">上映電影</h2>
+      <ul class="heroes">
+
+        <li *ngFor="let hero of heroes"
+          [class.selected]="hero === selectedHero"
+          (click)="onSelect(hero)"
+          >
+          <img src={{hero.url}}  width="150px" hight="200px">
+          <span class="badge">{{hero.id}}</span> {{hero.name}}
+  
+        </li>
+
+      </ul>
+
+      <div class ="detail"  *ngIf="selectedHero">
+        <h2 style="color:white">
+          <!--uppercase是把字都變大寫-->
+          <br><br><br><br><br><br><br><br><br><br><br><br>{{selectedHero.name | uppercase}} 電影資訊
+        </h2>
+          <button class="detailbutton" (click)="gotoDetail()">前往電影資訊</button>
+      </div>

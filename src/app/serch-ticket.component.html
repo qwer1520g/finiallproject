@@ -1,0 +1,25 @@
+<h2 class="title" style="color:white">電影場次查詢</h2>
+<h3 class="careful" style="color:red">請輸入姓名或電話</h3>
+<div class="serch">
+    <div>
+    <label class="name">請輸入持票者姓名: </label><input [(ngModel)]="serchname" placeholder="name"/>
+    </div>
+    <br><div>
+    <label class="phone">請輸入持票者電話: </label><input [(ngModel)]="serchphone" placeholder="phone"/>
+    </div>
+    <br><div class="serchButton" (click)="SerchName(serchname,serchphone)">
+        <span>查詢</span>
+    </div>
+    
+        <br><div class="moviedate" style="color:green;font-weight:bold">
+            <label>電影票日期:</label><span style="color:white;">{{informations[serDatechindex].moviedate}}</span>
+        </div>
+        <br><div style="color:green;font-weight:bold">
+            <label>電影票日期:</label><span style="color:white;">{{informations[serDatechindex].movietime}}</span>
+        </div>
+        <br><div style="color:green;font-weight:bold">
+            <label>電影座位:</label><span style="color:white;">{{informations[serDatechindex].movieReserveSit[serchSitindex]}}</span>
+        </div>
+    
+     
+</div>

@@ -1,0 +1,44 @@
+
+
+
+<div class="middle" *ngIf="hero">
+      <h2 class="movietitle" style="color:white;font-weight:bolder">{{hero.name}} 詳細介紹!</h2>
+      <div>
+        <img class="img" src={{hero.url}}  width="150px" hight="200px">
+      </div>
+      <!--<div>
+        <label>id: </label>{{hero.id}}
+      </div>-->
+    <div class="mid">
+      <div>
+        <label class="moviename" style="color:yellow">電影名稱: </label>{{hero.name}}       
+      </div>
+      <div>
+        <label class="movielength" style="color:yellow">電影長度: </label>{{hero.length}}
+      </div>
+      <div *ngIf="getlevel()">
+        <label class="movielevel" style="color:yellow">電影級數: </label>
+        <span class="level"  style="color:red;font-weight:bolder">{{hero.level}}</span> 
+      </div>
+      <div *ngIf="!getlevel()">
+        <label class="movielevel" style="color:yellow">電影級數: </label>
+        <span class="level"  style="color:green;font-weight:bold;">{{hero.level}}</span> 
+      </div>
+      <div>
+        <label class="moviedate" style="color:yellow">上映日期: </label>{{hero.date}}
+      </div>
+       <button class="back" style="color:blue" (click)="goBack()">返回</button>
+       <button class="book"  style="color:blue" (click)="book()">訂票</button>
+    </div>  
+     <div class="trailer">
+        <iframe width="560" height="315" [src]='sanitizer.bypassSecurityTrustResourceUrl(hero.trailerURL)' frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="introduce" style="width:800px">
+      <span style="font-size:24px;color:yellowgreen;font-weight: bold;">故事介紹:</span>
+      <span>{{hero.introduce}}</span>
+    </div>
+</div>
+ 
+      
+
+    

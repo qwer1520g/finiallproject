@@ -1,0 +1,41 @@
+      <h1>{{title}}</h1>
+      <h2>My Heroes</h2>
+      <ul class="heroes">
+        <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </li>
+      </ul>
+       <!--如何將A.component的參數傳到 B.component
+        http://ben-do.github.io/2016/07/22/Note-of-Angular-2-How-to-pass-variable-between-two-components/-->
+      <hero-detail [hero]="selectedHero"></hero-detail>
+
+      <!--單一個component選擇時條件式判斷
+      各種binding解說  https://dotblogs.com.tw/wellwind/2016/11/12/angular2-data-binding
+      [(ngModel)]為雙向binding
+      <div *ngIf="selectedHero" >
+        
+        <h2>{{selectedHero.name}} details!</h2>
+        <div><label>id: </label>{{selectedHero.id}}</div>
+        <div>
+          <label>name: </label>
+          <input [(ngModel)]="selectedHero.name" placeholder="name"/>
+          
+        </div>
+      </div>
+      -->
+      
+      <!--初始(還沒按英雄的時候)
+        <div *ngIf="!selectedHero"  >
+        <h2>{{hero.name}} details!</h2>
+        <div><label>id: </label>{{hero.id}}</div>
+        <div>
+          <label>name: </label>
+          <input [(ngModel)]="hero.name" placeholder="name"/>
+        </div>
+      </div>
+      -->
+     
+      
+    
+
+    

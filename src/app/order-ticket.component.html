@@ -1,0 +1,43 @@
+<h2>訂票資訊</h2>
+<div class ="movieImg"  >
+    <img src={{hero.url}} width="200px" hight="300px">
+</div>
+<div style="font-size:22px" >
+    <div class="imformation">
+        <br><label>您選擇的場次:</label>
+    </div>
+    <div class="Date">
+        <br><label>日期:</label>{{selectedsits.moviedate}}
+    </div>
+    <div class="Time">    
+        <br><label>時間:</label>{{selectedsits.movietime}}
+    </div>
+    <div>
+        <br><span class="msg">請點選位子(最多4個位子) </span>
+    </div>
+</div> 
+<div>
+    <ul  class="back">
+        <li class="sits" *ngFor="let ms of moviesits[0].sits; let i=index">
+            
+                
+                <div class="csg" *ngIf="cansit(ms)==='1'"  (click)="storeSits(i)" >
+                    <img><span class="sitnumber" style="font-size:17px">{{moviesits[0].sitnumber[i]}}</span>
+                </div>
+                <div class="csr" *ngIf="cansit(ms)==='2'"  (click)="storeSits(i)" >
+                    <img><span class="nowenter" style="font-size:17px">{{moviesits[0].sitnumber[i]}}</span>
+                </div>
+            
+                <div class="cts" *ngIf="cansit(ms)==='0'" >
+                    <img>
+                </div>
+        </li>
+    </ul>
+
+</div>
+     
+<div style="text-align:center">
+    <br>
+    <span class="confirm" (click)="next()">下一步</span>
+    <span class="cancel" (click)="cancel()">取消訂票</span>
+</div>

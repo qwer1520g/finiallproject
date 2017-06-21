@@ -1,0 +1,132 @@
+.movieImg{
+   position:relative;
+    left:43%; 
+}
+.imformation{
+    color: white;
+    font-weight: bold;
+    position:relative;
+    left:45%;
+}
+.Date{
+    color: white;
+    font-weight: bold;
+    position:relative;
+    left:44%;
+}
+.Time{
+    color: white;
+    font-weight: bold;
+    position:relative;
+    left:46%;
+}
+.confirm{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #DDD;
+    left: .1em;
+    border-style:solid;
+    border-color:greenyellow;
+    border-radius:6px;
+}
+.confirm:hover{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #DDD;
+    left: .1em;
+    border-style:solid;
+    border-color:red;
+    border-radius:6px;
+    cursor: pointer; cursor: hand;
+}
+.cancel{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #DDD;
+    left: .1em;
+    border-style:solid;
+    border-color:greenyellow;
+    border-radius:6px;
+}
+.cancel:hover{
+   color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #DDD;
+    left: .1em;
+    border-style:solid;
+    border-color:red;
+    border-radius:6px;
+    cursor: pointer; cursor: hand;
+}
+.back{
+    background: black;
+    width:700px;
+    padding: 20px;
+    position:relative; 
+     left:25%;
+}
+.sits{
+    display: inline;
+     
+     margin:5px;
+}
+.msg{
+    color: red;
+    font-size:26px;
+     position:relative; 
+     left:41%;
+    
+}
+.csg{
+    display: inline-block;
+    width:8%;
+    margin-top:8px;
+    text-align:center;
+    background-color: green;
+    margin-bottom:5px;
+    cursor:pointer;
+    font-size:50px;
+    line-height:1;
+    border-radius:4px
+}
+.csg:hover{
+    display: inline-block;
+    width:8%;
+    margin-top:8px;
+    text-align:center;
+    background-color: red;
+    margin-bottom:5px;
+    cursor:pointer;
+    font-size:50px;
+    line-height:1;
+    border-radius:4px
+}
+ .csr{
+    display: inline-block;
+    width:8%;
+    margin-top:8px;
+    text-align:center;
+    background-color: red;
+    margin-bottom:5px;
+    cursor:pointer;
+    font-size:50px;
+    line-height:1;
+    border-radius:4px
+}
+.cts{
+    display: inline-block;
+    width:8%;
+    margin-top:8px;
+    text-align:center;
+    background-color: gray;
+    margin-bottom:5px;
+    cursor:not-allowed; 
+    font-size:50px;
+    line-height:1;
+    border-radius:4px
+
+}
