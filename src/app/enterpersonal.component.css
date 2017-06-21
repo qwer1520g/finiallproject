@@ -1,0 +1,65 @@
+.title{
+   position:relative;
+    left:45%;  
+}
+.movieImg{
+    position:relative;
+    left:45%; 
+}
+.time{
+    color:white;
+    font-weight:bold;
+    position:relative;
+    left:45%; 
+}
+.date{
+    color:white;
+    font-weight:bold;
+    position:relative;
+    left:45%; 
+}
+.name{
+    color:white;
+    font-weight:bold;
+    position:relative;
+    left:45%; 
+}
+.phone{
+     color:white;
+    font-weight:bold;
+    position:relative;
+    left:45%; 
+}
+.sits{
+    color:white;
+    font-weight:bold;
+    position:relative;
+    left:45%; 
+}
+.confirm{
+    color:black;
+    background-color: #DDD;
+    font-size: 18px;
+    font-weight:bold;
+    left: .1em;
+    width: 40px;
+    border-style:solid;
+    border-color:greenyellow;
+    border-radius:6px;
+    position:relative;
+    left:45%; 
+}
+.confirm:hover{
+    color:red;
+    background-color: #DDD;
+    font-size: 20px;
+    font-weight:bold;
+    left: .1em;
+    width: 45px;
+    border-style:solid;
+    border-color:greenyellow;
+    border-radius:10px;
+    cursor: pointer; cursor: hand;
+    position:relative;
+    left:45%; 
+}

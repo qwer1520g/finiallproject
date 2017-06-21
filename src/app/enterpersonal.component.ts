@@ -44,6 +44,11 @@ export class EnterPersonalComponent {
       .subscribe(information => this.information = information);
       
     }
-    
-  
+    confirm():void{
+
+        alert("訂票完成 如需查詢請按左上角查詢");
+
+      this.router.navigate(['/heroes']);
+    }
+      
 }
