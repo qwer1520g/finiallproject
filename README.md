@@ -1,3 +1,10 @@
+
+組長:郭子豪B10313108
+組員:歐昱誠B10313132
+    鄭家翔B10313158
+    蔡鴻聖B10313054
+    吳柏軍B10313115
+    林承葳B10313103
 # Hero
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
@@ -26,3 +33,4 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
